@@ -6,5 +6,7 @@ Edge adjustment is a performance bottleneck in larger size of graphs (about 1 mi
 The script then generates random string labels for each one of the nodes that have at least one edge connection (non connected nodes are discarded here)
 Next, the script writes a sql table with edges between nodes acting as primary key (also there is a column for edge weights that is currently set to 1.0 as a default value)
 
+N.B.: the generated graph is completely randome, which means it may or may not be connected. 
+
 TODO1: verify file writes are performed correctly 
 TODO2: add a function to create a series of such graphs according to a user-entered change factor 
